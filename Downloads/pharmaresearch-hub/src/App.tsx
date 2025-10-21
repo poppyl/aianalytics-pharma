@@ -46,8 +46,9 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <NavigationProvider>
-            <NavigationLayout>
-              <Routes>
+            <div className="app-container">
+              <NavigationLayout>
+                <Routes>
                 {/* Home Section */}
                 <Route path="/" element={<Index />} />
                 <Route path="/notifications" element={<Notifications />} />
@@ -89,8 +90,9 @@ const App = () => (
                 <Route path="/settings/system-instructions" element={<SystemInstructions />} />
                 
                 <Route path="*" element={<NotFound />} />
-              </Routes>
-            </NavigationLayout>
+                </Routes>
+              </NavigationLayout>
+            </div>
           </NavigationProvider>
         </BrowserRouter>
       </TooltipProvider>
