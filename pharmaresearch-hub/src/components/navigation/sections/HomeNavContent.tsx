@@ -18,15 +18,6 @@ export const HomeNavContent = () => {
         <Clock className="mr-2 h-4 w-4" />
         Recent Activity
       </NavLink>
-      <NavLink to="/notifications" className={navLinkClasses}>
-        <Bell className="mr-2 h-4 w-4" />
-        <span className="flex-1">Notifications</span>
-        <Badge variant="destructive" className="ml-auto">3</Badge>
-      </NavLink>
-      <NavLink to="/quick-actions" className={navLinkClasses}>
-        <Zap className="mr-2 h-4 w-4" />
-        Quick Actions
-      </NavLink>
     </nav>
   );
 };

@@ -19,7 +19,7 @@ export function DashboardStats() {
             </span>
           </div>
           <p className="text-2xl font-bold text-foreground mb-1">{stat.value}</p>
-          <p className="text-sm text-muted-foreground">{stat.label}</p>
+          <p className="text-sm font-medium text-foreground">{stat.label}</p>
         </div>
       ))}
     </div>

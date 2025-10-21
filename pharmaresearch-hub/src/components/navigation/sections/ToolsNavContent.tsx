@@ -26,7 +26,7 @@ export const ToolsNavContent = () => {
         <FileText className="mr-2 h-4 w-4" />
         Documents
       </NavLink>
-      <NavLink to="/tools/data-viz" className={navLinkClasses}>
+      <NavLink to="/tools/data-visualizations" className={navLinkClasses}>
         <BarChart className="mr-2 h-4 w-4" />
         Data & Visualizations
       </NavLink>

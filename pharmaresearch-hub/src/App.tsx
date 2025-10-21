@@ -7,7 +7,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index";
 import Notifications from "./pages/Notifications";
 import QuickActions from "./pages/QuickActions";
-import AllTools from "./pages/tools/AllTools";
+import Tools from "./pages/Tools";
 import Chat from "./pages/tools/Chat";
 import Notebooks from "./pages/tools/Notebooks";
 import Documents from "./pages/tools/Documents";
@@ -52,11 +52,11 @@ const App = () => (
                 <Route path="/quick-actions" element={<QuickActions />} />
 
                 {/* Tools Section */}
-                <Route path="/tools" element={<AllTools />} />
-                <Route path="/tools/chat" element={<Chat />} />
-                <Route path="/tools/notebooks" element={<Notebooks />} />
+                <Route path="/tools" element={<Tools />} />
+                <Route path="/tools/data-visualizations" element={<DataVisualizations />} />
                 <Route path="/tools/documents" element={<Documents />} />
-                <Route path="/tools/data-viz" element={<DataVisualizations />} />
+                <Route path="/tools/notebooks" element={<Notebooks />} />
+                <Route path="/tools/chat" element={<Chat />} />
 
                 {/* Intelligence Section */}
                 <Route path="/insights/horizon" element={<HorizonScanning />} />
