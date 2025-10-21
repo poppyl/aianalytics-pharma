@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AppContextProvider } from "@/contexts/AppContext";
 import { NavigationProvider } from "@/contexts/NavigationContext";
 import { NavigationLayout } from "@/components/navigation/NavigationLayout";
+import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index";
 import Notifications from "./pages/Notifications";
 import QuickActions from "./pages/QuickActions";
@@ -41,8 +42,9 @@ const App = () => (
     <AppContextProvider>
       <BrowserRouter>
         <NavigationProvider>
-          <div className="app-container">
-            <NavigationLayout>
+          <TooltipProvider>
+            <div className="app-container">
+              <NavigationLayout>
               <Routes>
                 {/* Home Section */}
                 <Route path="/" element={<Index />} />
@@ -86,8 +88,9 @@ const App = () => (
 
                 <Route path="*" element={<NotFound />} />
               </Routes>
-            </NavigationLayout>
-          </div>
+              </NavigationLayout>
+            </div>
+          </TooltipProvider>
         </NavigationProvider>
       </BrowserRouter>
     </AppContextProvider>
