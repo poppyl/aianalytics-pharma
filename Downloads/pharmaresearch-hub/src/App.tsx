@@ -90,14 +90,14 @@ const App = () => (
                 <Route path="/settings/system-instructions" element={<SystemInstructions />} />
                 
                 <Route path="*" element={<NotFound />} />
-                </Routes>
-              </NavigationLayout>
-            </div>
-          </NavigationProvider>
-        </BrowserRouter>
-      </TooltipProvider>
-    </AppContextProvider>
-  </QueryClientProvider>
+              </Routes>
+            </NavigationLayout>
+          </div>
+        </NavigationProvider>
+      </BrowserRouter>
+    </TooltipProvider>
+  </AppContextProvider>
+</QueryClientProvider>
 );
 
 export default App;
