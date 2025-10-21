@@ -33,6 +33,7 @@ import Security from "./pages/settings/Security";
 import SystemInstructions from "./pages/settings/SystemInstructions";
 import NotFound from "./pages/NotFound";
 
+// Force new deployment
 const queryClient = new QueryClient();
 
 const App = () => (
