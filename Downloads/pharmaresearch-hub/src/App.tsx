@@ -49,55 +49,55 @@ const App = () => (
             <div className="app-container">
               <NavigationLayout>
                 <Routes>
-                {/* Home Section */}
-                <Route path="/" element={<Index />} />
-                <Route path="/notifications" element={<Notifications />} />
-                <Route path="/quick-actions" element={<QuickActions />} />
-                
-                {/* Tools Section */}
-                <Route path="/tools" element={<AllTools />} />
-                <Route path="/tools/chat" element={<Chat />} />
-                <Route path="/tools/notebooks" element={<Notebooks />} />
-                <Route path="/tools/documents" element={<Documents />} />
-                <Route path="/tools/data-viz" element={<DataVisualizations />} />
-                
-                {/* Intelligence Section */}
-                <Route path="/insights/horizon" element={<HorizonScanning />} />
-                <Route path="/insights/pipeline" element={<PipelineIntelligence />} />
-                <Route path="/insights/analytics" element={<Analytics />} />
-                <Route path="/insights/competitive" element={<CompetitiveIntelligence />} />
-                <Route path="/insights/market" element={<MarketLandscape />} />
-                <Route path="/insights/tech-radar" element={<TechnologyRadar />} />
-                
-                {/* Knowledge Section */}
-                <Route path="/knowledge" element={<KnowledgeHub />} />
-                <Route path="/knowledge/data-sources" element={<DataSources />} />
-                <Route path="/knowledge/graph" element={<KnowledgeGraph />} />
-                <Route path="/knowledge/workflows" element={<Workflows />} />
-                <Route path="/library" element={<Library />} />
-                
-                {/* Community Section */}
-                <Route path="/community/shared-with-me" element={<SharedWithMe />} />
-                <Route path="/community/my-shares" element={<MyShares />} />
-                <Route path="/community/teams" element={<Teams />} />
-                <Route path="/community/discover" element={<Discover />} />
-                
-                {/* Settings Section */}
-                <Route path="/settings/profile" element={<Profile />} />
-                <Route path="/settings/integrations" element={<Integrations />} />
-                <Route path="/settings/preferences" element={<Preferences />} />
-                <Route path="/settings/security" element={<Security />} />
-                <Route path="/settings/system-instructions" element={<SystemInstructions />} />
-                
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </NavigationLayout>
-          </div>
-        </NavigationProvider>
-      </BrowserRouter>
-    </TooltipProvider>
-  </AppContextProvider>
-</QueryClientProvider>
+                  {/* Home Section */}
+                  <Route path="/" element={<Index />} />
+                  <Route path="/notifications" element={<Notifications />} />
+                  <Route path="/quick-actions" element={<QuickActions />} />
+                  
+                  {/* Tools Section */}
+                  <Route path="/tools" element={<AllTools />} />
+                  <Route path="/tools/chat" element={<Chat />} />
+                  <Route path="/tools/notebooks" element={<Notebooks />} />
+                  <Route path="/tools/documents" element={<Documents />} />
+                  <Route path="/tools/data-viz" element={<DataVisualizations />} />
+                  
+                  {/* Intelligence Section */}
+                  <Route path="/insights/horizon" element={<HorizonScanning />} />
+                  <Route path="/insights/pipeline" element={<PipelineIntelligence />} />
+                  <Route path="/insights/analytics" element={<Analytics />} />
+                  <Route path="/insights/competitive" element={<CompetitiveIntelligence />} />
+                  <Route path="/insights/market" element={<MarketLandscape />} />
+                  <Route path="/insights/tech-radar" element={<TechnologyRadar />} />
+                  
+                  {/* Knowledge Section */}
+                  <Route path="/knowledge" element={<KnowledgeHub />} />
+                  <Route path="/knowledge/data-sources" element={<DataSources />} />
+                  <Route path="/knowledge/graph" element={<KnowledgeGraph />} />
+                  <Route path="/knowledge/workflows" element={<Workflows />} />
+                  <Route path="/library" element={<Library />} />
+                  
+                  {/* Community Section */}
+                  <Route path="/community/shared-with-me" element={<SharedWithMe />} />
+                  <Route path="/community/my-shares" element={<MyShares />} />
+                  <Route path="/community/teams" element={<Teams />} />
+                  <Route path="/community/discover" element={<Discover />} />
+                  
+                  {/* Settings Section */}
+                  <Route path="/settings/profile" element={<Profile />} />
+                  <Route path="/settings/integrations" element={<Integrations />} />
+                  <Route path="/settings/preferences" element={<Preferences />} />
+                  <Route path="/settings/security" element={<Security />} />
+                  <Route path="/settings/system-instructions" element={<SystemInstructions />} />
+                  
+                  <Route path="*" element={<NotFound />} />
+                </Routes>
+              </NavigationLayout>
+            </div>
+          </NavigationProvider>
+        </BrowserRouter>
+      </TooltipProvider>
+    </AppContextProvider>
+  </QueryClientProvider>
 );
 
 export default App;
