@@ -126,10 +126,6 @@ export function RecentPublications() {
                 <h3 className="text-lg font-semibold text-foreground leading-tight">
                   {pub.title}
                 </h3>
-                <Badge variant="secondary" className="flex items-center gap-1 shrink-0">
-                  <Sparkles className="h-3 w-3" />
-                  <span className="text-xs">AI</span>
-                </Badge>
               </div>
               <p className="text-sm text-muted-foreground mb-3">
                 {pub.authors} • <span className="font-medium">{pub.journal}</span>
