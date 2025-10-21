@@ -1,0 +1,12 @@
+{
+  "buildCommand": "cd pharmaresearch-hub && npm install && npm run build",
+  "outputDirectory": "pharmaresearch-hub/dist",
+  "installCommand": "cd pharmaresearch-hub && npm install",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
+
