@@ -19,6 +19,7 @@ export default defineConfig(({ mode }) => ({
   build: {
     outDir: "dist",
     sourcemap: false,
+    emptyOutDir: true,
     rollupOptions: {
       output: {
         manualChunks: {
@@ -28,5 +29,9 @@ export default defineConfig(({ mode }) => ({
         },
       },
     },
+  },
+  preview: {
+    port: 3000,
+    host: true,
   },
 }));
